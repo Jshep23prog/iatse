@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1E1E1e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+ .elementor-background-overlay {
+  opacity: 0.7;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.elementor-background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  box-sizing: border-box;
+}
+.elementor-nav-menu {
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item{
+  display: flex;
+      font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-secondary-font-weight);
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #FFFFFFDE;
+  fill: #FFFFFFDE;
+  padding: 13px 20px;
+
+}
+ a:hover {
+  padding: 10px 20px;
+  line-height: 20px;
+  font-size: larger;
+
 }
