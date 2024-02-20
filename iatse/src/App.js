@@ -1,11 +1,16 @@
 import logo from './logo.svg';
+import iatse from './iatse-logo.png'
 import './App.css';
+import React from 'react'
+import ReactDOM from 'react';
+import { SocialIcon } from 'react-social-icons'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class ="elementor-background-overlay" >
+        <div class="elementor-background-overlay" >
           <ul id="menu" class="elementor-nav-menu">
             <li class="menu-item">
               <a href="https://iatse.net/about" class="elementor-item">About Us </a>
@@ -24,18 +29,32 @@ function App() {
             </li>
           </ul>
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div class="elementor-column">
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.facebook.com/IATSE" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.twitter.com/IATSE" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.instagram.com/IATSE" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.linkedin.com/company/20353269/" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.tiktok.com/@iatse" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://www.twitch.tv/IATSE" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+
+          <span class="elementor-grid-item">
+            <SocialIcon url="https://iatse.net/?s" fgColor="white" bgColor="#1E1E1e" />
+          </span>
+          <i class="fas fa-search"></i>
+        </div>
+        <img src={iatse} className="App-logo" alt="logo" />
       </header>
     </div>
   );

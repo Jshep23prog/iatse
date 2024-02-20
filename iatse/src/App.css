@@ -82,3 +82,9 @@ a {
   font-size: larger;
 
 }
+#search {
+  
+}
+.elementor-social-icon {
+  color: var(--e-social-icon-icon-color);
+}
